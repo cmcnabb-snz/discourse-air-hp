@@ -277,7 +277,7 @@ html body #main-outlet {
   margin-top: 30px;
   margin-bottom: 50px;
   background: var(--secondary);
-  border-radius: 0.5em;
+  border-radius: 0.5em !important;
   padding: 3em 3em 5%;
   max-width: 1150px;
   .archetype-regular & {
