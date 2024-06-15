@@ -171,7 +171,7 @@ input[type="color"],
 .select-kit.combo-box .select-kit-header,
 .d-editor-textarea-wrapper,
 div.ac-wrap {
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .d-header {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
@@ -220,7 +220,7 @@ div.ac-wrap {
 
 .btn:not(.themes-tab):not(.components-tab),
 .select-kit.dropdown-select-box .dropdown-select-box-header {
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid transparent;
 }
 
@@ -260,17 +260,13 @@ html {
       linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
   }
   .background-container {
+    background: #F0F4F8; /* Solid background color */
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(
-      90deg,
-      var(--tertiary-hover) 0%,
-      var(--tertiary) 100%
-    );
-    clip-path: ellipse(148% 70% at 91% -14%);
+    z-index: 0;
   }
   body.no-ember .background-container {
     display: none;
